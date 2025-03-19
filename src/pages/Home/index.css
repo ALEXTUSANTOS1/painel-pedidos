@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    width: 100%
+}
+.content{
+    padding: 20px;
+    height: 81.1vh;
+}
+.list-products-container {
+    max-height: 560px; /* Defina a altura máxima desejada */
+    overflow-y: auto; /* Permite rolagem vertical */
+    scrollbar-width: none; /* For Firefox */
+}
+.list-products-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}

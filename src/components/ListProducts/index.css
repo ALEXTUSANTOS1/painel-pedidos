@@ -1,0 +1,79 @@
+/* Estilos para a lista de produtos */
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.product-list h2{
+    text-align: center;
+}
+
+.product-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-list li:last-child {
+    border-bottom: none;
+}
+
+.product-list li:hover {
+    background-color: #f9f9f9;
+}
+
+.product-list li .product-name {
+    font-weight: bold;
+}
+
+.product-list li .product-price {
+    color: #888;
+}
+/* Estilos para o cabeçalho da lista de produtos */
+.product-list-header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    margin-left: 50px;
+}
+
+.product-list-header .header-name {
+    flex: 1;
+}
+
+.product-list-header .header-price {
+    flex: 0.5;
+    text-align: right;
+}
+/* Estilos para o corpo da lista de produtos */
+.products-list-body{
+    background: #888;
+}
+
+.product-list-item {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.product-list-item span {
+    display: flex;
+    align-items: center;
+}
+
+.product-list-item img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: -10px;
+}
